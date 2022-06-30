@@ -1,0 +1,18 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" width="9" height="9">
+	<title>Post</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ededfb } 
+	</style>
+	<g id="Post">
+		<g id="popup-pre-footer">
+			<g id="cards">
+				<g id="50">
+					<g id="checked">
+						<path id="Shape" fill-rule="evenodd" class="shp0" d="M9 4.5C9 6.98 6.98 9 4.5 9C2.02 9 0 6.98 0 4.5C0 2.02 2.02 0 4.5 0C6.98 0 9 2.02 9 4.5ZM7.02 2.67C6.83 2.49 6.55 2.49 6.37 2.67L3.8 5.24L2.59 4.14C2.41 3.97 2.13 3.98 1.96 4.16C1.8 4.34 1.82 4.62 2 4.79L3.52 6.18C3.7 6.35 3.97 6.34 4.14 6.17L7.02 3.32C7.2 3.14 7.2 2.85 7.02 2.67Z" />
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

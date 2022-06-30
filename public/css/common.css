@@ -1,0 +1,379 @@
+.rounded-t-r{
+  border-radius: 0px 2px 2px 0px;
+}
+.main-navigation a.nav-link:hover svg path{
+  fill:#458D68;
+}
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #E1E8EE;
+  width: 20px;
+  background-color: #FFF;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #bfd8cb;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #458D68;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.our-recommendations-slider.owl-carousel button.owl-dot{
+  width: 10px;
+  height: 10px;
+  background: #CCE3DE 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+.our-recommendations-slider.owl-carousel button.owl-dot.active{
+  background: #73A9B0 0% 0% no-repeat padding-box;
+}
+.our-recommendations-slider.owl-carousel .owl-dots{
+  text-align: center;
+  margin-top: 40px;
+}
+.quotes-icon{
+  left: 23%;
+  margin-top: -10px;
+}
+
+/* testimounial slider */
+.testimonials-slider.owl-carousel .owl-item img.btn-play-sec{
+  width: auto;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+}
+.testimonials-slider.owl-carousel .owl-nav button.owl-next, .testimonials-slider.owl-carousel .owl-nav button.owl-prev,
+.loop-slider.owl-carousel .owl-nav button.owl-next, .loop-slider.owl-carousel .owl-nav button.owl-prev{
+  position: absolute;
+  bottom: 15px;
+  width: 40px;
+  height: 40px;
+  right: 25px;
+  background: #00376D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials-slider.owl-carousel .owl-nav button.owl-next:hover, .testimonials-slider.owl-carousel .owl-nav button.owl-prev:hover{
+  opacity: 0.8;
+}
+.testimonials-slider.owl-carousel .owl-nav button.owl-prev{
+  right: 27.5%;
+}
+.testimonials-slider.owl-carousel button.owl-dot{
+  background-color: #DBECFF;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 0px 7px;
+}
+.testimonials-slider.owl-carousel button.owl-dot.active{
+  background-color: #00376D;
+}
+.testimonials-slider.owl-carousel .owl-dots{
+  position: absolute;
+  bottom: 7%;
+  right: 12%;
+}
+/* post */
+.small-container{
+  max-width: 769px;
+  margin: 0 auto;
+}
+.medium-container{
+  max-width: 1020px;
+  margin: 0 auto;
+}
+.loop-slider.owl-carousel.owl-drag .owl-item{
+  opacity: 0.5;
+}
+.loop-slider.owl-carousel.owl-drag .owl-item.active{
+  opacity: 1;
+}
+.loop-slider.owl-carousel .owl-nav button.owl-next, .loop-slider.owl-carousel .owl-nav button.owl-prev{
+  bottom: auto;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.loop-slider.owl-carousel .owl-nav button.owl-prev{
+  right: auto;
+  left: 3%;
+}
+.right-w{
+  max-width: 749px;
+}
+.dieter-container{
+  max-width: 879px;
+  margin-left: auto;
+}
+.social-icon-sec{
+  width: 11%;
+}
+.der-geriater{
+  max-width: 268px;
+}
+.spriessen-damit-sec{
+  max-width: 850px;
+}
+.social-icon-sec1 ul{
+  max-width: 200px;
+}
+.post-slider.owl-carousel.owl-drag .owl-item{
+  opacity: 0.5;
+}
+.post-slider.owl-carousel.owl-drag .owl-item.active{
+  opacity: 1;
+}
+/* serch popup */
+#search-menu{
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+#search-menu.toggled{
+  top: 60px;
+  opacity: 1;
+  visibility: visible;
+}
+.back-to-top{
+  box-shadow: 1px 0px 20px 20px #ffffff17;
+}
+.back-to-top img{
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+}
+.hilfe-fur-sec-top > .container{
+  max-width: 1130px;
+}
+.post-page .hilfe-fur-sec-top > .container{
+  max-width: 1020px;
+}
+.chf-dots{
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+}
+.hilfe-fur-fixed{
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+.hilfe-fur-fixed.active{
+  display: none;
+}
+.radio-btn input:checked ~ span{
+  background-color: #CE0209;
+}
+.radio-btn input:checked ~ p,
+.radio-btn input:checked ~ h2{
+  color: #fff;
+}
+.radio-btn input:checked ~ img{
+  display: block;
+}
+.radio-btn input:checked ~ .chf-dots span{
+  background-color: #fff;
+}
+.radio-btn input{
+  z-index: 999;
+}
+.input-field .custom-input{
+  z-index: 9999;
+  background-color: transparent;
+  max-width: 95px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+}
+.radio-btn input:checked ~ .custom-input{
+  color: #fff;
+}
+@media screen and (max-width:1023px){
+  .input-field .custom-input{
+    max-width: 75px;
+    bottom: 5px;
+  }
+  .our-recommendations-slider.owl-carousel .owl-dots{
+    margin-top: 30px;
+  }
+  .testimonials-slider.owl-carousel .owl-dots {
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    right: auto;
+  }
+  .testimonials-slider.owl-carousel .owl-nav button.owl-next, .testimonials-slider.owl-carousel .owl-nav button.owl-prev{
+    bottom: 25px;
+    right: 30%;
+  }
+  .testimonials-slider.owl-carousel .owl-nav button.owl-prev {
+    right: auto;
+    left: 30%;
+  }
+  .testimonials-slider.owl-carousel .owl-dots{
+    bottom: 6%;
+  }
+  .quotes-icon {
+    left: 8%;
+  }
+}
+@media screen and (max-width:767px){
+  .loop-slider.owl-carousel .owl-nav button.owl-next, .loop-slider.owl-carousel .owl-nav button.owl-prev{
+    right: 0%;
+  }
+  .loop-slider.owl-carousel .owl-nav button.owl-prev{
+    left: 0;
+  }
+  .our-recommendations-slider.owl-carousel .owl-dots{
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .testimonials-slider.owl-carousel .owl-item img.btn-play-sec{
+    max-width: 70px;
+  }
+  .testimonials-slider.owl-carousel .owl-nav button.owl-next, .testimonials-slider.owl-carousel .owl-nav button.owl-prev {
+    bottom: 15px;
+    right: 4%;
+  }
+  .testimonials-slider.owl-carousel .owl-dots {
+    bottom: 6%;
+  }
+  .testimonials-slider.owl-carousel .owl-nav button.owl-prev {
+    right: auto;
+    left: 4%;
+  } 
+  .quotes-icon{
+    max-width: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    margin-top: 0;
+  }
+}
+@media screen and (min-width:1024px) and (max-width:1299px){
+  .testimonials-slider.owl-carousel .owl-item img.btn-play-sec{
+    max-width: 70px;
+  }
+  .quotes-icon {
+    left: 8%;
+  }
+  body .jetzt-btn{
+    font-size: 13px;
+  }
+}
+@media screen and (min-width:1300px) and (max-width:1599px){
+  .quotes-icon {
+    left: 18%;
+  }
+  .main-navigation .relative{
+    margin-left: 25px !important;
+  }
+}
+@media screen and (min-width:1024px) and (max-width:1239px){
+  /* total width */
+  header .main-navigation > div::-webkit-scrollbar {
+    background-color:#fff;
+    width:100%;
+    height: 7px;
+  }
+  /* background of the scrollbar except button or resizer */
+  header .main-navigation > div::-webkit-scrollbar-track {
+    background-color:#fff
+  }
+  header .main-navigation > div::-webkit-scrollbar-track:hover {
+    background-color:#f4f4f4
+  }
+  /* scrollbar itself */
+  header .main-navigation > div::-webkit-scrollbar-thumb {
+    background-color:#babac0;
+    border-radius:16px;
+    border:5px solid #fff
+  }
+  header .main-navigation > div::-webkit-scrollbar-thumb:hover {
+    background-color:#a0a0a5;
+    border:4px solid #f4f4f4
+  }
+}
+@media screen and (min-width:1240px) and (max-width:1299px){
+  .main-navigation .relative{
+    margin-left: 10px !important;
+  }
+}
+@media screen and (min-width:1300px) and (max-width:1399px){
+  .main-navigation .relative{
+    margin-left: 16px !important;
+  }
+}

@@ -1,0 +1,1819 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alzheimerpunktch / magazine overview</title>
+    <!-- Source+Sans+Pro fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Lora -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,600&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <!-- common css -->
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="overflow-x-hidden">
+      <!-- Headre start  -->
+      <header>
+        <div id="top-bar" class="relative bg-primary" x-data="{ open: false, focus: true }">
+            <div class="container mx-auto px-4 sm:px-6">
+                <div class="flex justify-between items-center py-2 lg:justify-start lg:space-x-10">
+                    <div class="flex justify-start lg:w-0 lg:flex-1">
+                        <div class="px-0 lg:px-5 lg:hidden">
+                            <div class="relative inline-block">
+                                <input type="text" id="search-icon" class="shadow-sm bg-transparent border border-primary-800 placeholder-blue-gray md:w-full inline-block w-3 md:block pl-4 pr-6 py-1 rounded-sm focus:ring-white focus:border-white text-white" placeholder="Suche"/>
+                                <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none" id="search-icon">
+                                
+                                <img src="./images/icon-search.png" alt="" class="search-icon"/></div>
+                            </div>
+                            <div id="search-menu" class="bg-white absolute p-8 height-auto w-full block md:hidden left-0 right-0 whitespace-nowrap z-index:50 -top-0.5 opacity-0 invisible">
+                                <div class="px-0 lg:px-5 relative">
+                                    <label for="search" class="sr-only">Search</label>
+                                    <input type="text" id="search" class="w-full shadow-sm rounded bg-primary-50 border border-blue-gray placeholder-blue-gray md:w-full inline-block w-3 md:block pl-4 pr-6 py-2 rounded-sm focus:ring-white focus:border-white text-black" placeholder="Search">
+                                </div>
+                            </div>
+                        </div>
+                        <nav id="top-menu" class="top-menu hidden text-sm lg:block">
+                            <div class="space-x-6 p-0 flex items-center text-blue-light">
+                                <div>
+                                    <a class="text-white capitalize hover:text-white" href="#">Agenda</a>
+                                </div>
+                                <div class="nav-bullet bg-green"></div>
+                                <div class="sm:mb-4 lg:mb-0">
+                                    <a href="#" class="capitalize hover:text-white">Autoren</a>
+                                </div>
+                                <div class="nav-bullet bg-green"></div>
+                                <div class="sm:mb-4 lg:mb-0">
+                                    <a href="#" class="capitalize hover:text-white">Gönner</a>
+                                </div>
+                                <div class="nav-bullet bg-green"></div>
+                                <div class="sm:mb-4 lg:mb-0">
+                                    <a href="#" class="capitalize hover:text-white">Podium Demenz</a>
+                                </div>
+                                <div class="nav-bullet bg-green"></div>
+                                <div class="sm:mb-4 lg:mb-0">
+                                    <a href="#" class="capitalize hover:text-white">Über uns</a>
+                                </div>
+                                <div class="nav-bullet bg-green"></div>
+                                <div class="sm:mb-4 lg:mb-0">
+                                    <a href="#" class="capitalize hover:text-white">Newsletter</a>
+                                </div>
+                                <div class="nav-bullet bg-green"></div>
+                                <div class="sm:mb-4 lg:mb-0">
+                                    <a href="#" class="capitalize hover:text-white">Kontakt</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="-mr-2 -my-2 lg:hidden">
+                        <button type="button"
+                            class="p-2 inline-flex items-center justify-center text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" @click="open = !open" :aria-expanded="open ? 'true' : 'false'" :class="{ 'active': open }"
+                            aria-expanded="false">
+                            <span class="uppercase mr-2 tracking-wider text-sm font-bold">Menu</span>
+                            <img src="./images/hamburger.svg" alt="" />
+                        </button>
+                    </div>
+                    <nav class="social-menu hidden lg:block">
+                        <ul class="space-x-4 p-0 flex list-none xl:space-x-5">
+                            <li>
+                                <a href="https://de-de.facebook.com/alzheimerpunktch" target="_blank" class="text-blue-gray hover:text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-5 w-auto">
+                                        <path fill="currentColor" fill-rule="nonzero" d="M18.558 0H1.442C.646 0 0 .646 0 1.442v17.116C0 19.354.646 20 1.442 20h9.242v-7.734H8.086V9.238h2.598V7.01c0-2.583 1.577-3.99 3.882-3.99 1.103 0 2.052.083 2.329.12v2.7h-1.59c-1.254 0-1.496.596-1.496 1.47v1.928h2.998l-.391 3.028h-2.607V20h4.749c.796 0 1.442-.646 1.442-1.442V1.442C20 .646 19.354 0 18.558 0Z"
+                                        ></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/alzheimer_ch" target="_blank" class="text-blue-gray hover:text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-5 w-auto">
+                                        <path fill="currentColor" fill-rule="nonzero"
+                                            d="M18.558 0H1.442C.646 0 0 .646 0 1.442v17.116C0 19.354.646 20 1.442 20h17.116c.796 0 1.442-.646 1.442-1.442V1.442C20 .646 19.354 0 18.558 0Zm-3.992 7.797c.004.098.006.197.006.297 0 3.033-2.308 6.53-6.53 6.53a6.497 6.497 0 0 1-3.518-1.03c.18.02.362.03.547.03a4.606 4.606 0 0 0 2.85-.982 2.298 2.298 0 0 1-2.143-1.594 2.284 2.284 0 0 0 1.036-.04 2.296 2.296 0 0 1-1.841-2.25V8.73c.31.172.663.275 1.04.287a2.293 2.293 0 0 1-.71-3.065 6.517 6.517 0 0 0 4.73 2.399 2.296 2.296 0 0 1 3.911-2.093 4.604 4.604 0 0 0 1.458-.558 2.304 2.304 0 0 1-1.01 1.27 4.578 4.578 0 0 0 1.319-.362c-.307.46-.697.865-1.145 1.189Z"
+                                        ></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCwCxIF1R6JuWqw-vzcdHWog" target="_blank" class="text-blue-gray hover:text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-5 w-auto">
+                                        <g fill="currentColor" fill-rule="nonzero">
+                                            <path d="m9 12 3-2-3-2z"></path>
+                                            <path d="M18.558 0H1.442C.646 0 0 .646 0 1.442v17.116C0 19.354.646 20 1.442 20h17.116c.796 0 1.442-.646 1.442-1.442V1.442C20 .646 19.354 0 18.558 0Zm-2.31 10.01s0 2.028-.257 3.006a1.566 1.566 0 0 1-1.101 1.102c-.978.257-4.89.257-4.89.257s-3.902 0-4.89-.268a1.566 1.566 0 0 1-1.101-1.101C3.75 12.038 3.75 10 3.75 10s0-2.028.258-3.006A1.598 1.598 0 0 1 5.11 5.882c.978-.257 4.89-.257 4.89-.257s3.912 0 4.89.268c.535.144.957.566 1.101 1.101.268.978.258 3.016.258 3.016Z"
+                                            ></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/alzheimer.ch/?hl=de" target="_blank" class="text-blue-gray hover:text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-5 w-auto">
+                                        <g fill="currentColor" fill-rule="nonzero">
+                                            <path d="M14.465 6.622a1.775 1.775 0 0 0-.428-.659 1.773 1.773 0 0 0-.659-.428c-.202-.078-.505-.172-1.063-.197-.604-.028-.786-.034-2.315-.034-1.53 0-1.71.006-2.314.034-.559.025-.862.119-1.064.197a1.772 1.772 0 0 0-.658.428c-.19.185-.337.41-.43.659-.077.202-.17.505-.196 1.064-.028.603-.034.785-.034 2.314 0 1.53.006 1.71.034 2.315.025.558.119.861.197 1.063.092.249.238.474.428.659.185.19.41.336.659.428.202.079.505.172 1.064.197.603.028.784.034 2.314.034s1.71-.006 2.314-.034c.559-.025.862-.118 1.064-.197.5-.193.894-.587 1.087-1.087.078-.202.172-.505.197-1.063.028-.604.034-.786.034-2.315 0-1.53-.006-1.71-.034-2.314-.025-.559-.118-.862-.197-1.064ZM10 12.957a2.956 2.956 0 1 1 0-5.913 2.956 2.956 0 0 1 0 5.913Zm3.043-5.305a.696.696 0 1 1 0-1.391.696.696 0 0 1 0 1.391Z"
+                                            ></path>
+                                            <path d="M11.913 10a1.913 1.913 0 1 1-3.826 0 1.913 1.913 0 0 1 3.826 0Z"></path>
+                                            <path d="M18.558 0H1.442C.646 0 0 .646 0 1.442v17.116C0 19.354.646 20 1.442 20h17.116c.796 0 1.442-.646 1.442-1.442V1.442C20 .646 19.354 0 18.558 0Zm-2.853 12.366c-.028.611-.125 1.028-.267 1.393a2.935 2.935 0 0 1-1.679 1.679c-.365.142-.782.239-1.393.267-.612.027-.807.034-2.366.034-1.559 0-1.754-.007-2.366-.034-.61-.028-1.028-.125-1.393-.267a2.812 2.812 0 0 1-1.017-.662 2.813 2.813 0 0 1-.662-1.017c-.141-.365-.239-.782-.266-1.393-.029-.612-.035-.807-.035-2.366 0-1.559.006-1.754.034-2.366.028-.611.125-1.028.267-1.393.144-.383.37-.73.662-1.017a2.811 2.811 0 0 1 1.017-.662c.365-.142.782-.239 1.393-.267.612-.027.807-.034 2.366-.034 1.559 0 1.754.007 2.366.035.611.027 1.028.124 1.393.266.383.144.73.37 1.017.662.292.287.518.634.662 1.017.142.365.239.782.267 1.393.028.612.034.807.034 2.366 0 1.559-.006 1.754-.034 2.366Z"
+                                            ></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div x-show="open" x-transition:enter="duration-200 ease-out" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in"
+                x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" x-description="Mobile menu, show/hide based on mobile menu state."
+                class="absolute top-0 inset-x-0 z-10 p-2 transition transform origin-top-right lg:hidden" x-ref="panel" @click.away="open = false">
+                <div class="rounded-sm shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+                    <div class="pt-4 pb-6 px-6 md:pb-8">
+                        <div class="flex items-center justify-end">
+                            <div class="-mr-2">
+                                <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 active"
+                                    @click="open = !open" :aria-expanded="open ? 'true' : 'false'" :class="{ 'active': open }" aria-expanded="true">
+                                    <span class="sr-only">Close menu</span>
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mt-2">
+                            <nav class="grid gap-y-6 text-sm">
+                                <div>
+                                    <a href="#" class="flex items-center hover:text-leaf">
+                                        <span class="text-base text-primary uppercase tracking-wide font-bold">
+                                            Startseite
+                                        </span>
+                                    </a>
+                                </div>
+                                <div x-data="dropdown()" @click.away="close">
+                                    <a href="post.html" class="flex items-center" @click="open">
+                                        <span class="text-primary uppercase tracking-wide font-bold">
+                                            Blogs
+                                        </span>
+                                        <svg x-state:on="Item active" x-state:off="Item inactive" class="ml-2 h-5 w-5 text-gray-400"
+                                            :class="{ 'text-gray-600': isOpen(), 'text-gray-400': !(isOpen()) }" x-description="Heroicon name: solid/chevron-down"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                    <div x-show="isOpen()" x-description="'Solutions' flyout menu, show/hide based on flyout menu state."
+                                        x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-1"
+                                        x-transition:enter-end="opacity-100 translate-y-0" class="transform w-screen max-w-xs sm:px-0 lg:ml-0"
+                                        x-ref="panel" style="display: none;">
+                                        <div class="overflow-hidden">
+                                            <div class="relative grid bg-white pt-2">
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Michael Schmieder
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Nina Streeck
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Pflegehexe
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Esther Spinner
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Peggy Elfmann
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Videoblogs
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Quergedacht
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Diskussion
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Wolkenfische
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div x-data="dropdown()" @click.away="close">
+                                    <a href="#" class="flex items-center hover:text-leaf border-none" @click="open">
+                                        <span class="text-primary uppercase tracking-wide font-bold hover:text-leaf border-none" :class="{ 'text-sky': isOpen() }">
+                                            Wissen
+                                        </span>
+                                        <svg x-state:on="Item active" x-state:off="Item inactive"
+                                            class="ml-2 h-5 w-5 text-gray-400"
+                                            :class="{ 'text-gray-600': isOpen(), 'text-gray-400': !(isOpen()) }"
+                                            x-description="Heroicon name: solid/chevron-down"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                        >
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                    <div
+                                        x-show="isOpen()"
+                                        x-description="'Solutions' flyout menu, show/hide based on flyout menu state."
+                                        x-transition:enter="transition ease-out duration-200"
+                                        x-transition:enter-start="opacity-0 -translate-y-1"
+                                        x-transition:enter-end="opacity-100 translate-y-0"
+                                        class="transform w-screen max-w-xs sm:px-0 lg:ml-0"
+                                        x-ref="panel"
+                                        style="display: none;"
+                                    >
+                                        <div class="overflow-hidden">
+                                            <div class="relative grid bg-white pt-2">
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Häufige Fragen
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Medizin
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Diagnose
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Forschung
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Lernvideos
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Bildung
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Architektur
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Quiz
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div x-data="dropdown()" @click.away="close">
+                                    <a href="#" class="flex items-center" @click="open">
+                                        <span class="text-primary uppercase tracking-wide font-bold" :class="{ 'text-sea': isOpen() }">
+                                            Ich habe Demenz
+                                        </span>
+                                        <svg
+                                            x-state:on="Item active"
+                                            x-state:off="Item inactive"
+                                            class="ml-2 h-5 w-5 group-hover:text-gray-500 text-gray-400"
+                                            :class="{ 'text-gray-600': isOpen(), 'text-gray-400': !(isOpen()) }"
+                                            x-description="Heroicon name: solid/chevron-down"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                        >
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                    <div
+                                        x-show="isOpen()"
+                                        x-description="'Solutions' flyout menu, show/hide based on flyout menu state."
+                                        x-transition:enter="transition ease-out duration-200"
+                                        x-transition:enter-start="opacity-0 -translate-y-1"
+                                        x-transition:enter-end="opacity-100 translate-y-0"
+                                        class="transform w-screen max-w-xs sm:px-0 lg:ml-0"
+                                        x-ref="panel"
+                                        style="display: none;"
+                                    >
+                                        <div class="overflow-hidden">
+                                            <div class="relative grid bg-white pt-2">
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Ich erzähle
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Das tut mir gut
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Wer hilft mir?
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div x-data="dropdown()" @click.away="close">
+                                    <a href="#" class="flex items-center" @click="open">
+                                        <span class="text-primary uppercase tracking-wide font-bold" :class="{ 'text-teal': isOpen() }">
+                                            Angehörige
+                                        </span>
+                                        <svg
+                                            x-state:on="Item active"
+                                            x-state:off="Item inactive"
+                                            class="ml-2 h-5 w-5 text-gray-400"
+                                            :class="{ 'text-gray-600': isOpen(), 'text-gray-400': !(isOpen()) }"
+                                            x-description="Heroicon name: solid/chevron-down"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                        >
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                    <div
+                                        x-show="isOpen()"
+                                        x-description="'Solutions' flyout menu, show/hide based on flyout menu state."
+                                        x-transition:enter="transition ease-out duration-200"
+                                        x-transition:enter-start="opacity-0 -translate-y-1"
+                                        x-transition:enter-end="opacity-100 translate-y-0"
+                                        class="transform w-screen max-w-xs sm:px-0 lg:ml-0"
+                                        x-ref="panel"
+                                        style="display: none;"
+                                    >
+                                        <div class="overflow-hidden">
+                                            <div class="relative grid bg-white pt-2">
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Hilfeleistung
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Krankheitsverlauf
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Ethik
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Diagnose
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Finanzen
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Recht
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Das Tagebuch
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div x-data="dropdown()" @click.away="close">
+                                    <a href="#" class="flex items-center" @click="open">
+                                        <span class="text-primary uppercase tracking-wide font-bold" :class="{ 'text-forest': isOpen() }">
+                                            Alltag
+                                        </span>
+                                        <svg
+                                            x-state:on="Item active"
+                                            x-state:off="Item inactive"
+                                            class="ml-2 h-5 w-5 text-gray-400"
+                                            :class="{ 'text-gray-600': isOpen(), 'text-gray-400': !(isOpen()) }"
+                                            x-description="Heroicon name: solid/chevron-down"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                        >
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                    <div
+                                        x-show="isOpen()"
+                                        x-description="'Solutions' flyout menu, show/hide based on flyout menu state."
+                                        x-transition:enter="transition ease-out duration-200"
+                                        x-transition:enter-start="opacity-0 -translate-y-1"
+                                        x-transition:enter-end="opacity-100 translate-y-0"
+                                        class="transform w-screen max-w-xs sm:px-0 lg:ml-0"
+                                        x-ref="panel"
+                                        style="display: none;"
+                                    >
+                                        <div class="overflow-hidden">
+                                            <div class="relative grid bg-white pt-2">
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Betreuung und Pflege
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Schwierige Situationen
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Aktivierung und Entspannung
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Fallbeispiele
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Technische Hilfe
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Lebensraum
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Lernvideos
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Shop
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div x-data="dropdown()" @click.away="close">
+                                    <a href="#" class="flex items-center" @click="open">
+                                        <span class="text-primary uppercase tracking-wide font-bold" :class="{ 'text-leaf': isOpen() }">
+                                            Gesellschaft
+                                        </span>
+                                        <svg
+                                            x-state:on="Item active"
+                                            x-state:off="Item inactive"
+                                            class="ml-2 h-5 w-5 text-gray-400"
+                                            :class="{ 'text-gray-600': isOpen(), 'text-gray-400': !(isOpen()) }"
+                                            x-description="Heroicon name: solid/chevron-down"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                        >
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                    <div
+                                        x-show="isOpen()"
+                                        x-description="'Solutions' flyout menu, show/hide based on flyout menu state."
+                                        x-transition:enter="transition ease-out duration-200"
+                                        x-transition:enter-start="opacity-0 -translate-y-1"
+                                        x-transition:enter-end="opacity-100 translate-y-0"
+                                        class="transform w-screen max-w-xs sm:px-0 lg:ml-0"
+                                        x-ref="panel"
+                                        style="display: none;"
+                                    >
+                                        <div class="overflow-hidden">
+                                            <div class="relative grid bg-white pt-2">
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Schweiz
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Deutschland
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Österreich
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Weltweit
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Zahlen und Fakten
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Organisationen
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div x-data="dropdown()" @click.away="close">
+                                    <a href="#" class="flex items-center" @click="open">
+                                        <span class="text-primary uppercase tracking-wide font-bold" :class="{ 'text-mint': isOpen() }">
+                                            Kultur
+                                        </span>
+                                        <svg
+                                            x-state:on="Item active"
+                                            x-state:off="Item inactive"
+                                            class="ml-2 h-5 w-5 text-gray-400"
+                                            :class="{ 'text-gray-600': isOpen(), 'text-gray-400': !(isOpen()) }"
+                                            x-description="Heroicon name: solid/chevron-down"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                        >
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                    <div
+                                        x-show="isOpen()"
+                                        x-description="'Solutions' flyout menu, show/hide based on flyout menu state."
+                                        x-transition:enter="transition ease-out duration-200"
+                                        x-transition:enter-start="opacity-0 -translate-y-1"
+                                        x-transition:enter-end="opacity-100 translate-y-0"
+                                        class="transform w-screen max-w-xs sm:px-0 lg:ml-0"
+                                        x-ref="panel"
+                                        style="display: none;"
+                                    >
+                                        <div class="overflow-hidden">
+                                            <div class="relative grid bg-white pt-2">
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Bücher
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Filme
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Bühne
+                                                </a>
+                                                <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                                    Medien
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <a href="#" class="flex items-center">
+                                        <span class="text-primary uppercase tracking-wide font-bold">
+                                            Dossiers
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a href="#" class="flex items-center">
+                                        <span class="text-primary uppercase tracking-wide font-bold">
+                                            Mediathek
+                                        </span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="flex items-center">
+                                        <span class="text-red uppercase tracking-wide font-bold ">
+                                            Spenden
+                                        </span>
+                                    </a>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="py-6 px-6 space-y-6 bg-gray-50">
+                        <div class="grid grid-cols-2 text-sm md:grid-cols-3 gap-y-4 gap-x-8">
+                            <a href="#" class="text-gray-900">
+                                Agenda
+                            </a>
+
+                            <a href="#" class="text-gray-900">
+                                Autoren
+                            </a>
+
+                            <a href="#" class="text-gray-900">
+                                Gönner
+                            </a>
+
+                            <a href="#" class="text-gray-900">
+                                Podium Demenz
+                            </a>
+
+                            <a href="#" class="text-gray-900">
+                                Über uns
+                            </a>
+
+                            <a href="#" class="text-gray-900">
+                                Newsletter
+                            </a>
+
+                            <a href="#" class="text-gray-900">
+                                Kontakt
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container border-b border-blue-light lg:border-none">
+            <div class="grid gap-4 grid-cols-5 py-5 md:py-6">
+                <div class="text-right flex items-center hidden md:hidden lg:flex xl:flex">
+                    <div class="px-0 relative">
+                        <label for="search" class="sr-only">Search</label>
+                        <input type="text" id="search" class="shadow-sm rounded bg-primary-50 border border-blue-gray placeholder-blue-gray md:w-full inline-block w-3 md:block pl-4 pr-9 py-2 rounded-sm focus:ring-white focus:border-white text-black"
+                            placeholder="Search"
+                        />
+                        <div class="absolute inset-y-0 right-5 flex items-center pointer-events-none">
+                            <img src="./images/icon-search.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-5 md:col-span-5 lg:col-span-3 xl:col-span-3 text-center items-end flex flex-wrap justify-center">
+                    <a href="index.html" class="border-none inline-block">
+                        <img class="m-auto" src="./images/logo-main.png" alt="" />
+                    </a>
+                    <h2 class="font-semibold text-green mb-0 lg:mb-1 lg:-mt-0.5 text-2xl md:text-4xl">Mehr wissen - besser helfen.</h2>
+                </div>
+                <div class="text-center flex items-center hidden md:hidden lg:flex xl:flex">
+                   <div class="bg-mint-dark p-4 px-4">
+                       <p class="text-red font-extrabold text-xs mb-1 flex justify-center items-center"><img class="mr-2" src="./images/heart.png" alt="" />Hilfe für viele.</p>
+                       <p class="text-xs">Ermöglichen Sie Informationen, die dementen Menschen und ihren Angehörigen helfen.</p>
+                       <a href="#" class="bg-red text-white px-3 xl:px-5 py-3 flex justify-center items-center text-xs sm:inline-flex uppercase font-bold text-green-dark border-none rounded-3xl hover:bg-opacity-50 jetzt-btn">Jetzt spenden<img src="./images/header-right-arrow.png" alt="" class="ml-2.5"></a>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-b border-blue-light hidden lg:block">
+            <div class="container">
+                <nav class="main-navigation text-sm">
+                    <div class="flex text-primary flex-wrap justify-center items-center px-0 py-4 2xl:pb-4 space-x-6 xl:space-x-8 2xl:space-x-0 2xl:justify-between">
+                        <div><a href="#" class="nav-link font-bold uppercase hover:text-leaf border-none">Startseite</a></div>
+
+                        <div class="relative" x-data="dropdown()" @mouseleave="close" @click.away="close">
+                            <a href="post.html"
+                                class="nav-link group bg-white inline-flex items-center hover:text-leaf border-none"
+                                @mouseover="!isTouch() &amp;&amp; open()"
+                                @touchstart="touchOpen();"
+                                :aria-expanded="isOpen"
+                                :class="{ 'text-primary-600': isOpen() }"
+                                aria-expanded="function isOpen() {return this.show === true}">
+                                <span class="uppercase font-bold hover:text-leaf border-none">Blogs</span>
+                                <svg
+                                    x-state:on="Item active"
+                                    x-state:off="Item inactive"
+                                    class="ml-2 h-5 w-5 group-hover:text-gray-500 text-gray-400"
+                                    :class="{ 'text-gray-600': isOpen(), 'text-gray-400': !(isOpen()) }"
+                                    x-description="Heroicon name: solid/chevron-down"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <div
+                                x-show="isOpen()"
+                                x-transition:enter="transition ease-out duration-200"
+                                x-transition:enter-start="opacity-0 translate-y-1"
+                                x-transition:enter-end="opacity-100 translate-y-0"
+                                x-transition:leave="transition ease-in duration-150"
+                                x-transition:leave-start="opacity-100 translate-y-0"
+                                x-transition:leave-end="opacity-0 translate-y-1"
+                                x-description="'Solutions' flyout menu, show/hide based on flyout menu state."
+                                class="absolute -ml-4 pt-3 transform z-10 px-2 w-screen max-w-xs sm:px-0 lg:ml-0"
+                                x-ref="panel"
+                                style="display: none;"
+                            >
+                                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid gap-1 bg-white p-4">
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Michael Schmieder
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Nina Streeck
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Pflegehexe
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Esther Spinner
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Peggy Elfmann
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Videoblog
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Quergedacht
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Diskussion
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Wolkenfische
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative" x-data="dropdown()" @mouseleave="close" @click.away="close">
+                            <a
+                                href="#"
+                                class="nav-link group bg-white inline-flex items-center hover:text-leaf border-none"
+                                @mouseover="!isTouch() &amp;&amp; open()"
+                                @touchstart="touchOpen()"
+                                :aria-expanded="isOpen()"
+                                :class="{ 'text-sky': isOpen() }"
+                            >
+                                <span class="font-bold uppercase hover:text-leaf border-none">Wissen</span>
+                                <svg
+                                    x-state:on="Item active"
+                                    x-state:off="Item inactive"
+                                    class="ml-2 h-5 w-5 group-hover:text-gray-500 text-gray-400"
+                                    :class="{ 'text-gray-600': isOpen(), 'text-gray-400': !(isOpen()) }"
+                                    x-description="Heroicon name: solid/chevron-down"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <div
+                                x-show="isOpen()"
+                                x-transition:enter="transition ease-out duration-200"
+                                x-transition:enter-start="opacity-0 translate-y-1"
+                                x-transition:enter-end="opacity-100 translate-y-0"
+                                x-transition:leave="transition ease-in duration-150"
+                                x-transition:leave-start="opacity-100 translate-y-0"
+                                x-transition:leave-end="opacity-0 translate-y-1"
+                                x-description="'Solutions' flyout menu, show/hide based on flyout menu state."
+                                class="absolute -ml-4 pt-3 transform z-10 px-2 w-screen max-w-xs sm:px-0 lg:ml-0"
+                                x-ref="panel"
+                                style="display: none;"
+                            >
+                                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid gap-1 bg-white p-4">
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Häufige Fragen
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Medizin
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Diagnose
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Forschung
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Lernvideos
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Bildung
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Architektur
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Quiz
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative" x-data="dropdown()" @mouseleave="close()" @click.away="close()">
+                            <a
+                                href="#"
+                                class="nav-link group bg-white inline-flex items-center hover:text-leaf border-none"
+                                @mouseover="!isTouch() &amp;&amp; open()"
+                                @touchstart="touchOpen()"
+                                :aria-expanded="isOpen()"
+                                :class="{ 'text-sea': isOpen() }"
+                            >
+                                <span class="font-bold uppercase hover:text-leaf border-none">Ich habe Demenz</span>
+                                <svg
+                                    x-state:on="Item active"
+                                    x-state:off="Item inactive"
+                                    class="ml-2 h-5 w-5 group-hover:text-gray-500 text-gray-400"
+                                    :class="{ 'text-gray-600': isOpen(), 'text-gray-400': !(isOpen()) }"
+                                    x-description="Heroicon name: solid/chevron-down"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <div
+                                x-show="isOpen()"
+                                x-transition:enter="transition ease-out duration-200"
+                                x-transition:enter-start="opacity-0 translate-y-1"
+                                x-transition:enter-end="opacity-100 translate-y-0"
+                                x-transition:leave="transition ease-in duration-150"
+                                x-transition:leave-start="opacity-100 translate-y-0"
+                                x-transition:leave-end="opacity-0 translate-y-1"
+                                x-description="'Solutions' flyout menu, show/hide based on flyout menu state."
+                                class="absolute -ml-4 pt-3 transform z-10 px-2 w-screen max-w-xs sm:px-0 lg:ml-0"
+                                x-ref="panel"
+                                style="display: none;"
+                            >
+                                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid gap-1 bg-white p-4">
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Ich erzähle
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Das tut mir gut
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Wer hilft mir?
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative" x-data="dropdown()" @mouseleave="close()" @click.away="close()">
+                            <a
+                                href="#"
+                                class="nav-link group bg-white inline-flex items-center hover:text-leaf border-none"
+                                @mouseover="!isTouch() &amp;&amp; open()"
+                                @touchstart="touchOpen()"
+                                :aria-expanded="isOpen()"
+                                :class="{ 'text-teal': isOpen() }"
+                            >
+                                <span class="font-bold uppercase hover:text-leaf border-none">Angehörige</span>
+                                <svg
+                                    x-state:on="Item active"
+                                    x-state:off="Item inactive"
+                                    class="ml-2 h-5 w-5 group-hover:text-gray-500 text-gray-400"
+                                    :class="{ 'text-gray-600': isOpen(), 'text-gray-400': !(isOpen()) }"
+                                    x-description="Heroicon name: solid/chevron-down"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <div
+                                x-show="isOpen()"
+                                x-transition:enter="transition ease-out duration-200"
+                                x-transition:enter-start="opacity-0 translate-y-1"
+                                x-transition:enter-end="opacity-100 translate-y-0"
+                                x-transition:leave="transition ease-in duration-150"
+                                x-transition:leave-start="opacity-100 translate-y-0"
+                                x-transition:leave-end="opacity-0 translate-y-1"
+                                x-description="'Solutions' flyout menu, show/hide based on flyout menu state."
+                                class="absolute -ml-4 pt-3 transform z-10 px-2 w-screen max-w-xs sm:px-0 lg:ml-0"
+                                x-ref="panel"
+                                style="display: none;"
+                            >
+                                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid gap-1 bg-white p-4">
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Hilfeleistung
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-gray-50 hover:border-primary">
+                                            Krankheitsverlauf
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-gray-50 hover:border-primary">
+                                            Ethik
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-gray-50 hover:border-primary">
+                                            Diagnose
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-gray-50 hover:border-primary">
+                                            Finanzen
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-gray-50 hover:border-primary">
+                                            Recht
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-gray-50 hover:border-primary">
+                                            Das Tagebuch
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative" x-data="dropdown()" @mouseleave="close()" @click.away="close()">
+                            <a
+                                href="#"
+                                class="nav-link group bg-white inline-flex items-center hover:text-leaf border-none"
+                                @mouseover="!isTouch() &amp;&amp; open()"
+                                @touchstart="touchOpen()"
+                                :aria-expanded="isOpen()"
+                                :class="{ 'text-forest': isOpen() }"
+                            >
+                                <span class="font-bold uppercase hover:text-leaf border-none">Alltag</span>
+                                <svg
+                                    x-state:on="Item active"
+                                    x-state:off="Item inactive"
+                                    class="ml-2 h-5 w-5 group-hover:text-gray-500 text-gray-400"
+                                    :class="{ 'text-gray-600': isOpen(), 'text-gray-400': !(isOpen()) }"
+                                    x-description="Heroicon name: solid/chevron-down"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <div
+                                x-show="isOpen()"
+                                x-transition:enter="transition ease-out duration-200"
+                                x-transition:enter-start="opacity-0 translate-y-1"
+                                x-transition:enter-end="opacity-100 translate-y-0"
+                                x-transition:leave="transition ease-in duration-150"
+                                x-transition:leave-start="opacity-100 translate-y-0"
+                                x-transition:leave-end="opacity-0 translate-y-1"
+                                x-description="'Solutions' flyout menu, show/hide based on flyout menu state."
+                                class="absolute -ml-4 pt-3 transform z-10 px-2 w-screen max-w-xs sm:px-0 lg:ml-0"
+                                x-ref="panel"
+                                style="display: none;"
+                            >
+                                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid gap-1 bg-white p-4">
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Betreuung und Pflege
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Schwierige Situationen
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Aktivierung und Entspannung
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Fallbeispiele
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Technische Hilfen
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Lebensraum
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Lernvideos
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Shop
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative" x-data="dropdown()" @mouseleave="close()" @click.away="close()">
+                            <a
+                                href="#"
+                                class="nav-link group bg-white inline-flex items-center border-none hover:text-leaf"
+                                @mouseover="!isTouch() &amp;&amp; open()"
+                                @touchstart="touchOpen()"
+                                :aria-expanded="isOpen()"
+                                :class="{ 'text-leaf': isOpen() }"
+                            >
+                                <span class="font-bold uppercase">Gesellschaft</span>
+                                <svg
+                                    x-state:on="Item active"
+                                    x-state:off="Item inactive"
+                                    class="ml-2 h-5 w-5 group-hover:text-gray-500 text-gray-400"
+                                    :class="{ 'text-gray-600': isOpen(), 'text-gray-400': !(isOpen()) }"
+                                    x-description="Heroicon name: solid/chevron-down"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <div
+                                x-show="isOpen()"
+                                x-transition:enter="transition ease-out duration-200"
+                                x-transition:enter-start="opacity-0 translate-y-1"
+                                x-transition:enter-end="opacity-100 translate-y-0"
+                                x-transition:leave="transition ease-in duration-150"
+                                x-transition:leave-start="opacity-100 translate-y-0"
+                                x-transition:leave-end="opacity-0 translate-y-1"
+                                x-description="'Solutions' flyout menu, show/hide based on flyout menu state."
+                                class="absolute -ml-4 pt-3 transform z-10 px-2 w-screen max-w-xs sm:px-0 lg:ml-0"
+                                x-ref="panel"
+                                style="display: none;"
+                            >
+                                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid gap-1 bg-white p-4">
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Schweiz
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Deutschland
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Österreich
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Weltweit
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Zahlen und Fakten
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Organisationen
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative" x-data="dropdown()" @mouseleave="close()" @click.away="close()">
+                            <a
+                                href="#"
+                                class="nav-link group bg-white inline-flex items-center hover:text-mint hover:text-leaf border-none"
+                                @mouseover="!isTouch() &amp;&amp; open()"
+                                @touchstart="touchOpen()"
+                                :aria-expanded="isOpen()"
+                                :class="{ 'text-mint': isOpen() }"
+                            >
+                                <span class="font-bold uppercase hover:text-leaf border-none">Kultur</span>
+                                <svg
+                                    x-state:on="Item active"
+                                    x-state:off="Item inactive"
+                                    class="ml-2 h-5 w-5 group-hover:text-gray-500 text-gray-400"
+                                    :class="{ 'text-gray-600': isOpen(), 'text-gray-400': !(isOpen()) }"
+                                    x-description="Heroicon name: solid/chevron-down"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <div
+                                x-show="isOpen()"
+                                x-transition:enter="transition ease-out duration-200"
+                                x-transition:enter-start="opacity-0 translate-y-1"
+                                x-transition:enter-end="opacity-100 translate-y-0"
+                                x-transition:leave="transition ease-in duration-150"
+                                x-transition:leave-start="opacity-100 translate-y-0"
+                                x-transition:leave-end="opacity-0 translate-y-1"
+                                x-description="'Solutions' flyout menu, show/hide based on flyout menu state."
+                                class="absolute -ml-4 pt-3 transform z-10 px-2 w-screen max-w-xs sm:px-0 lg:ml-0"
+                                x-ref="panel"
+                                style="display: none;"
+                            >
+                                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid gap-1 bg-white p-4">
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Bücher
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Filme
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Bühne
+                                        </a>
+
+                                        <a href="#" class="p-2 text-gray-900 hover:text-primary hover:bg-primary-light hover:border-primary">
+                                            Medien
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div><a href="#" class="nav-link font-bold uppercase border-none hover:text-leaf border-none">Dossiers</a></div>
+                        <div><a href="#" class="nav-link font-bold uppercase border-none hover:text-leaf border-none">Mediathek</a></div>
+                        <div><a href="#" class="nav-link font-bold uppercase border-none hover:text-leaf border-none text-red">Spenden</a></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+      </header>
+    <!-- Headre End  -->
+    <main class="bg-blue-bg lg:py-14 lg:pb-8 md:py-6 pt-5"> 
+            <div class="container px-2 sm:px-4 lg:px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-2 md:gap-4 lg:mb-7">
+                  <div class="lg:col-span-3 lg:pr-3 xl:pr-4 order-2 lg:order-1">
+                      <!-- breadcrumbs start -->
+                      <div class="bg-primary-50 p-3 px-5 flex items-center mb-7 hidden lg:flex">
+                        <a href="index.html" class="text-base my-0 no-underline border-none font-bold">GESELLSCHAFT </a>
+                        <img src="./images/magazine-overview/breadcrumbs-arrow.png" alt="" class="mx-4">
+                        <h2 class="text-base text-leaf my-0">ÜBERSICHT</h2>
+                      </div>
+                      <!-- breadcrumbs end -->
+                      <!-- boxes start -->
+                      <div class="col-span-full grid grid-cols-3">
+                        <div class="col-span-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 pr-0 md:gap-5 xl:gap-8 gap-3">
+                          <div class="bg-white border-blue-light border rounded">
+                              <div class="reletive">
+                                  <img src="./images/magazine-overview/ubersicht-img.png" alt="" class="w-full">
+                                  <a href="#" class="bg-leaf text-white p-3 font-bold relative -top-3.5 rounded-t-r text-xs">SCHWEIZ</a>
+                              </div>
+                              <div class="p-5">
+                                  <h4 class="font-normal text-sm text-green border-b border-green-light pb-3 mt-0">WERTSCHÄTZEN</h4>
+                                  <h3 class="text-1xl">Eine Worthülse, die wir füllen müssen</h3> 
+                              </div>                   
+                          </div>
+                          <div class="bg-white border-blue-light border rounded">
+                              <div class="reletive">
+                                  <img src="./images/magazine-overview/ubersicht-img1.png" alt="" class="w-full">
+                                  <a href="#" class="bg-leaf text-white p-3 font-bold relative -top-3.5 rounded-t-r text-xs">WELTWEIT</a>
+                              </div>
+                              <div class="p-5">
+                                  <h4 class="font-normal text-sm text-green border-b border-green-light pb-3 mt-0">ÄLTERWERDEN</h4>
+                                  <h3 class="text-1xl">«Der Greis ist heiss»</h3> 
+                              </div>                   
+                          </div>
+                          <div class="bg-white border-blue-light border rounded">
+                              <div class="reletive">
+                                <img src="./images/magazine-overview/ubersicht-img2.png" alt="" class="w-full">
+                                <a href="#" class="text-white p-3 font-bold relative -top-3.5 rounded-t-r bg-leaf text-xs" >SCHWEIZ</a>
+                              </div>
+                              <div class="p-5">
+                                  <h4 class="font-normal text-sm text-green border-b border-green-light pb-3 mt-0">ABGESCHOBEN</h4>
+                                  <h3 class="text-1xl">Die Geschichte eines vergessenen Lebens</h3> 
+                              </div>                   
+                          </div>
+                          <div class="bg-white border-blue-light border rounded lg:col-span-2">
+                            <div class="reletive">
+                                <img src="./images/index/digital-img8.png" alt="" class="w-full hidden lg:block">
+                                <img src="./images/index/digital-img8-tablate.png" alt="" class="w-full block md:hidden">
+                                <img src="./images/magazine-overview/digital-img8-mobile.png" alt="" class="w-full hidden md:block lg:hidden">
+                                <a href="#" class="text-white p-3 font-bold relative -top-3.5 rounded-t-r bg-leaf text-xs">SCHWEIZ</a>
+                            </div>
+                            <div class="p-5">
+                                <h4 class="font-normal text-sm text-green border-b border-green-light pb-3 mt-0">KOMMENTAR</h4>
+                                <h3 class="text-1xl">Impfen – ein Appell an die Vernunft</h3> 
+                            </div>                   
+                          </div>
+                          <div class="pt-7 block lg:hidden bg-primary-50">
+                            <img src="./images/colors-line.png" alt="">
+                            <div class="p-4">
+                                <h2 class="border-b border-blue-light pb-3 mb-4 text-green-dark text-2.5xl mt-3">DEMENZWIKI</h2>
+                                <p class="text-green-dark mb-0">Eine Checkliste mit den häufigsten Themen zu Alzheimer und Demenz</p>
+                                <ul class="m-0 p-0 mt-5">
+                                    <li class="list-none flex mb-3">
+                                        <img src="./images/index/medizin-img.svg" alt="" class="w-7">
+                                        <span class="ml-3 font-bold text-primary">MEDIZIN</span>
+                                        <img src="./images/index/icon_arrow.svg" alt="" class="ml-3">
+                                    </li>
+                                    <li class="list-none flex mb-3">
+                                        <img src="./images/index/stethoscope.svg" alt="" class="w-7">
+                                        <span class="ml-3 font-bold text-primary">DIAGNOSE</span>
+                                        <img src="./images/index/icon_arrow.svg" alt="" class="ml-3">
+                                    </li>
+                                    <li class="list-none flex mb-3">
+                                        <img src="./images/index/book.svg" alt="" class="w-7">
+                                        <span class="ml-3 font-bold text-primary">FORSCHUNG</span>
+                                        <img src="./images/index/icon_arrow.svg" alt="" class="ml-3">
+                                    </li>
+                                    <li class="list-none flex mb-3">
+                                        <img src="./images/index/video.svg" alt="" class="w-7">
+                                        <span class="ml-3 font-bold text-primary">LERNVIDEOS</span>
+                                        <img src="./images/index/icon_arrow.svg" alt="" class="ml-3">
+                                    </li>
+                                    <li class="list-none flex mb-3">
+                                        <img src="./images/index/cap.svg" alt="" class="w-7">
+                                        <span class="ml-3 font-bold text-primary">BILDUNG</span>
+                                        <img src="./images/index/icon_arrow.svg" alt="" class="ml-3">
+                                    </li>
+                                    <li class="list-none flex mb-3">
+                                        <img src="./images/index/grid.svg" alt="" class="w-7">
+                                        <span class="ml-3 font-bold text-primary">ARCHITEKTUR</span>
+                                        <img src="./images/index/icon_arrow.svg" alt="" class="ml-3">
+                                    </li>
+                                </ul>
+                                <a href="#" class="hover:bg-opacity-50 bg-green-cyan px-5 py-2 flex justify-center items-center text-sm sm:inline-flex uppercase font-bold text-green-dark border-none hover:border-0 rounded mt-5">ÜBERSICHT<img src="./images/right-arrow.png" alt="" class="m-2.5"></a>
+                            </div>
+                          </div>
+                          <div class="pt-7 block lg:hidden bg-primary-50">
+                            <img src="./images/colors-line.png" alt="">
+                            <div class="p-4">
+                                <h2 class="border-b border-blue-light pb-3 mb-4 text-green-dark text-2.5xl mt-3">TERMINE</h2>
+                                <ul class="m-0 p-0 mt-5">
+                                    <li class="list-none mb-3">
+                                        <p class="flex items-center font-bold text-green mb-1">17.03.2021 <span class="nav-bullet hidden md:block bg-green m-3"></span> TAGUNG</p>
+                                        <p class="text-primary">Wo der Schuh im Alter drückt</p>
+                                        <p class="text-green-cyandark text-xs border-b border-blue-light pb-3 mt-0">ONLINE, GANZTÄGIG</p>
+                                    </li>
+                                    <li class="list-none mb-3">
+                                        <p class="flex items-center font-bold text-green mb-1">17.03.2021 <span class="nav-bullet hidden md:block bg-green m-3"></span> TAGUNG</p>
+                                        <p class="text-primary">Wo der Schuh im Alter drückt</p>
+                                        <p class="text-green-cyandark text-xs border-b border-blue-light pb-3 mt-0">ONLINE, GANZTÄGIG</p>
+                                    </li>
+                                    <li class="list-none mb-3">
+                                        <p class="flex items-center font-bold text-green mb-1">17.03.2021 <span class="nav-bullet hidden md:block bg-green m-3"></span> TAGUNG</p>
+                                        <p class="text-primary">Wo der Schuh im Alter drückt</p>
+                                        <p class="text-green-cyandark text-xs border-b border-blue-light pb-3 mt-0">ONLINE, GANZTÄGIG</p>
+                                    </li>
+                                </ul>
+                                <a href="#" class="hover:bg-opacity-50 bg-green-cyan px-5 py-2 flex justify-center items-center text-sm sm:inline-flex uppercase font-bold text-green-dark border-none hover:border-0 rounded mt-2">ALLE TERMINE<img src="./images/right-arrow.png" alt="" class="m-2.5"></a>
+                            </div>
+                        </div>
+                          <div class="bg-white border-blue-light border rounded">
+                              <div class="reletive">
+                                <img src="./images/magazine-overview/ubersicht-img4.png" alt="" class="w-full">
+                                <a href="#" class="bg-leaf text-white p-3 font-bold relative -top-3.5 rounded-t-r text-xs">DEUTSCHLAND</a>
+                              </div>
+                              <div class="p-5">
+                                  <h4 class="font-normal text-sm text-green border-b border-green-light pb-3 mt-0">NATIONALE DEMENZSTRATEGIE</h4>
+                                  <h3 class="text-1xl">«Alle haben sich weggeduckt»</h3> 
+                              </div>                   
+                          </div>
+                          <div class="bg-white border-blue-light border rounded">
+                            <div class="reletive">
+                                <img src="./images/magazine-overview/ubersicht-img5.png" alt="" class="w-full">
+                                <a href="#" class="bg-leaf text-white p-3 font-bold relative -top-3.5 rounded-t-r text-xs">WELTWEIT</a>
+                            </div>
+                            <div class="p-5">
+                                <h4 class="font-normal text-sm text-green border-b border-green-light pb-3 mt-0">FILMTIPP</h4>
+                                <h3 class="text-1xl">Das pflegende Wunder aus Polen</h3> 
+                            </div>                
+                          </div>
+                          <div class="bg-white border-blue-light border rounded">
+                              <div class="reletive">
+                                <img src="./images/magazine-overview/ubersicht-img6.png" alt="" class="w-full">
+                                  <a href="#" class="bg-leaf text-white p-3 font-bold relative -top-3.5 rounded-t-r text-xs">SCHWEIZ</a>
+                              </div>
+                              <div class="p-5">
+                                  <h4 class="font-normal text-sm text-green border-b border-green-light pb-3 mt-0">PLATTFORM MÄANDER</h4>
+                                  <h3 class="text-1xl">Was bringt das «Leuchtturm-Projekt»?</h3> 
+                              </div>                
+                          </div>
+                          <div class="bg-white border-blue-light border rounded">
+                            <div class="reletive">
+                              <img src="./images/magazine-overview/ubersicht-img7.png" alt="" class="w-full">
+                                <a href="#" class="bg-leaf text-white p-3 font-bold relative -top-3.5 rounded-t-r text-xs">SCHWEIZ</a>
+                            </div>
+                            <div class="p-5">
+                                <h4 class="font-normal text-sm text-green border-b border-green-light pb-3 mt-0">KOMMENTAR</h4>
+                                <h3 class="text-1xl">«Also eilte ich zu den Eiern»</h3> 
+                            </div>                
+                          </div>
+                          <div class="pt-7 bg-primary-50 col-span-full md:col-span-1 block lg:hidden">
+                            <img src="./images/colors-line.png" alt="">
+                            <div class="p-4">
+                                <h2 class="border-b border-blue-light pb-3 mb-4 text-green-dark text-2.5xl mt-1">
+                                    UNGEKÜNSTELT
+                                </h2>
+                                <img src="./images/ungekunstelt-img.png" alt="" class="w-full">
+                                <p class="text-green-dark pt-3">
+                                    Das schöpferische Potenzial von<br>
+                                    Menschen mit Demenz
+                                </p>
+                                <a href="#" class="hover:bg-opacity-80 bg-green-cyan px-5 py-2 flex justify-center items-center text-sm sm:inline-flex uppercase font-bold text-green-dark border-none hover:border-0 rounded">
+                                    ZUR WEBSEITE<img src="./images/right-arrow.png" alt="" class="m-2.5">
+                                </a>
+                            </div>
+                          </div>
+                          <div class="text-green-dark bg-green-cyan pt-6 md:flex block lg:hidden flex-wrap justify-between mb-3 md:mb-0">
+                                <img src="./images/colors-line.png" alt="">
+                                <div class="py-4 px-4 md:px-6 col-span-full lg:col-span-4 lg:pr-20">
+                                    <h2 class="border-b border-green-dark border-opacity-50 pb-3 mb-5 text-green-dark mt-0 font-normal text-6xl"><b class="font-bold">news</b>letter</h2>
+                                    <p>Möchten Sie monatlich eine Zusammenfassung unserer besten Beiträge lesen? Abonnieren Sie unseren Newsletter!</p>
+                                </div>
+                                <div class="col-span-full lg:col-span-2 block bg-primary-50 bg-green bg-opacity-10 w-full flex item-center justify-center items-center md:py-16 py-8 px-3 md:px-0">
+                                    <a href="#" class="hover:bg-opacity-80 bg-green-dark px-5 py-2 flex justify-center items-center text-sm sm:inline-flex uppercase font-bold text-white border-none rounded w-full md:w-auto">
+                                        ABONNIEREN<img src="./images/right-arrow-white.png" alt="" class="m-2.5">
+                                    </a>
+                                </div>
+                           </div>
+                       </div>
+                      </div>
+                      <!-- boxes End -->
+                      <!-- newsletter start -->
+                      <div class="text-green-dark bg-green-cyan grid grid-cols-1 lg:grid-cols-6 gap-4 mt-8 hidden lg:grid">
+                        <div class="py-12 px-18 col-span-full lg:col-span-4 lg:pr-20">
+                            <h2 class="border-b border-green-dark border-opacity-50 pb-3 mb-5 text-green-dark mt-0 font-normal text-6xl"><b class="font-bold">news</b>letter</h2>
+                            <p>Möchten Sie monatlich eine Zusammenfassung unserer besten Beiträge lesen? Abonnieren Sie unseren Newsletter!</p>
+                        </div>
+                        <div class="col-span-full lg:col-span-2 block bg-primary-50 bg-green bg-opacity-10 flex item-center justify-center items-center">
+                            <a href="#" class="hover:bg-opacity-80 bg-green-dark px-5 py-2 flex justify-center items-center text-sm sm:inline-flex uppercase font-bold text-white border-none rounded">
+                                ABONNIEREN<img src="./images/right-arrow-white.png" alt="" class="m-2.5" />
+                            </a>
+                        </div>
+                      </div>
+                      <!-- newsletter ebd -->
+                       <!-- boxes start -->
+                       <div class="col-span-full grid grid-cols-3 lg:mt-9 md:mt-5 mt-0">
+                        <div class="col-span-full grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 pr-0 md:gap-5 xl:gap-8 gap-3">
+                          <div class="bg-white border-blue-light border rounded">
+                              <div class="reletive">
+                                  <img src="./images/index/digital-img13.png" alt="" class="w-full">
+                                  <a href="#" class="text-white p-3 font-bold relative -top-3.5 rounded-t-r bg-leaf text-xs">WELTWEIT</a>
+                              </div>
+                              <div class="p-5">
+                                  <h4 class="font-normal text-sm text-green border-b border-green-light pb-3 mt-0">NEUJAHR 2021</h4>
+                                  <h3 class="text-1xl">Bitte nicht vergessen!</h3> 
+                              </div>                   
+                          </div>
+                          <div class="bg-white border-blue-light border rounded lg:col-span-2">
+                              <div class="reletive">
+                                  <img src="./images/magazine-overview/ubersicht-img8.png" alt="" class="w-full hidden lg:block">
+                                  <img src="./images/magazine-overview/ubersicht-img8-tablate.png" alt="" class="w-full block lg:hidden">
+                                  <a href="#" class="bg-sky text-white p-3 font-bold relative -top-3.5 rounded-t-r text-xs text-xs">WELTWEIT</a>
+                              </div>
+                              <div class="p-5">
+                                  <h4 class="font-normal text-sm text-green border-b border-green-light pb-3 mt-0">DEMENZ UND MIGRATION</h4>
+                                  <h3 class="text-1xl">«Sie sind gekommen und geblieben»</h3> 
+                              </div>                   
+                          </div>
+                          <div class="bg-white border-blue-light border rounded">
+                              <div class="reletive">
+                                <img src="./images/magazine-overview/ubersicht-img9.png" alt="" class="w-full">
+                                  <a href="#" class="bg-sky text-white p-3 font-bold relative -top-3.5 rounded-t-r text-xs">WELTWEIT</a>
+                              </div>
+                              <div class="p-5">
+                                  <h4 class="font-normal text-sm text-green border-b border-green-light pb-3 mt-0">NEUJAHR 2021</h4>
+                                  <h3 class="text-1xl">Bitte nicht vergessen!</h3> 
+                              </div>                   
+                          </div>
+                          <div class="bg-white border-blue-light border rounded">
+                              <div class="reletive">
+                                <img src="./images/magazine-overview/ubersicht-img10.png" alt="" class="w-full">
+                                <a href="#" class="text-white p-3 font-bold relative -top-3.5 rounded-t-r bg-forest text-xs">DEUTSCHLAND</a>
+                              </div>
+                              <div class="p-5">
+                                  <h4 class="font-normal text-sm text-green border-b border-green-light pb-3 mt-0">KONFETTI IM KOPF</h4>
+                                  <h3 class="text-1xl">«Da ist keine Fassade mehr, die Menschen leben im Hier und Jetzt»</h3> 
+                              </div>                   
+                          </div>
+                          <div class="pt-7 block lg:hidden md:col-span-2 bg-primary-50">
+                            <img src="./images/colors-line.png" alt="">
+                            <div class="p-4">
+                                <h2 class="border-b border-blue-light pb-3 mb-4 text-green-dark text-2.5xl mt-3">BLOGS</h2>
+                                <div class="flex">
+                                  <img src="./images/index/megaphone.svg" alt="" class="w-6"> 
+                                  <h4 class="font-bold text-lg ml-4 my-0">QUER GEDACHT</h4>
+                                </div>
+                                <p class="text-green-dark my-3">Unsere Blogger schreiben mit spitzer Feder: Lesen Sie erfrischend andere Ansichten.</p>
+                                <ul class="pl-0 pt-2 grid md:grid-cols-2 grid-cols-1">
+                                    <li class="list-none flex items-center border-b border-blue-light pb-5 mb-5">
+                                        <img src="./images/index/pegge-img.png" alt="">
+                                        <div class="ml-5 ">
+                                            <a href="#" class="border-none mt-0 text-base font-normal text-green">Peggy Elfmann</a>
+                                            <p class="mb-0 mt-1 text-xs">Kontakt halten und helfen in Zeiten von Corona</p>
+                                        </div>
+                                    </li>
+                                    <li class="list-none flex items-center border-b border-blue-light pb-5 mb-5">
+                                        <img src="./images/index/pegge-img1.png" alt="">
+                                        <div class="ml-5 ">
+                                            <a href="#" class="border-none mt-0 text-base font-normal text-green">Pflegehexe</a>
+                                            <p class="mb-0 mt-1 text-xs">Fragen, die gestellt werden müssen</p>
+                                        </div>
+                                    </li>
+                                    <li class="list-none flex items-center border-b border-blue-light pb-5 mb-5">
+                                        <img src="./images/index/pegge-img2.png" alt="">
+                                        <div class="ml-5 ">
+                                            <a href="#" class="border-none mt-0 text-base font-normal text-green">Nina Streeck</a>
+                                            <p class="mb-0 mt-1 text-xs">Patienten-Verfügungen gegen Bettenknappheit?</p>
+                                        </div>
+                                    </li>
+                                    <li class="list-none flex items-center border-b border-blue-light pb-5 mb-5">
+                                        <img src="./images/index/pegge-img4.png" alt="">
+                                        <div class="ml-5 ">
+                                            <a href="#" class="border-none mt-0 text-base font-normal text-green">Pflegehexe</a>
+                                            <p class="mb-0 mt-1 text-xs">Die Konsequenzen ziehen</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="#" class="hover:bg-opacity-50 bg-green-cyan px-5 py-2 flex justify-center items-center text-sm sm:inline-flex uppercase font-bold text-green-dark border-none hover:border-0 rounded">ALLE BLOGBEITRÄGE<img src="./images/right-arrow.png" alt="" class="m-2.5"></a>
+                            </div>
+                          </div>
+                          <div class="bg-white border-blue-light border rounded">
+                            <div class="reletive">
+                                <img src="./images/magazine-overview/ubersicht-img11.png" alt="" class="w-full">
+                                <a href="#" class="text-white p-3 font-bold relative -top-3.5 rounded-t-r bg-forest text-xs">SCHWEIZ</a>
+                            </div>
+                            <div class="p-5">
+                                <h4 class="font-normal text-sm text-green border-b border-green-light pb-3 mt-0">KOMMENTAR</h4>
+                                <h3 class="text-1xl">Nationale Demenzstrategie – grosser Schritt oder Papiertiger?</h3> 
+                            </div>                
+                          </div>
+                        <div class="bg-white border-blue-light border rounded">
+                            <div class="reletive">
+                                <img src="./images/magazine-overview/ubersicht-img12.png" alt="" class="w-full">
+                                <a href="#" class="bg-sky text-white p-3 font-bold relative -top-3.5 rounded-t-r bg-green-darklight text-xs">WELTWEIT</a>
+                            </div>
+                            <div class="p-5">
+                                <h4 class="font-normal text-sm text-green border-b border-green-light pb-3 mt-0">FILMTIPP</h4>
+                                <h3 class="text-1xl">Das pflegende Wunder aus Polen</h3> 
+                            </div>                
+                        </div>
+                        <div class="bg-white border-blue-light border rounded">
+                            <div class="reletive">
+                                <img src="./images/magazine-overview/ubersicht-img13.png" alt="" class="w-full">
+                                <a href="#" class="bg-sky text-white p-3 font-bold relative -top-3.5 rounded-t-r text-xs">SCHWEIZ</a>
+                            </div>
+                            <div class="p-5">
+                                <h4 class="font-normal text-sm text-green border-b border-green-light pb-3 mt-0">PLATTFORM MÄANDER</h4>
+                                <h3 class="text-1xl">Was bringt das «Leuchtturm-Projekt»?</h3> 
+                            </div>                   
+                        </div>
+                        <div class="bg-white border-blue-light border rounded">
+                          <div class="reletive">
+                            <img src="./images/magazine-overview/ubersicht-img14.png" alt="" class="w-full">
+                              <a href="#" class="bg-leaf text-white p-3 font-bold relative -top-3.5 rounded-t-r text-xs">SCHWEIZ</a>
+                          </div>
+                          <div class="p-5">
+                              <h4 class="font-normal text-sm text-green border-b border-green-light pb-3 mt-0">KOMMENTAR</h4>
+                              <h3 class="text-1xl">«Also eilte ich zu den Eiern»</h3> 
+                          </div>                
+                        </div>
+                       </div>
+                      </div>
+                      <!-- boxes End -->
+                      <div class="flex items-center flex-wrap justify-center py-5 md:pt-8 lg:py-14 lg:pb-0 md:pb-2">
+                        <div class="w-10 h-10 mx-1 md:mx-2">
+                            <a href="#" class="text-primary rounded bg-green-cyanlight w-full text-lg font-bold h-full flex items-center justify-center">1</a>
+                        </div>
+                        <div class="w-10 h-10 mx-1 md:mx-2 border-blue-light bg-white border rounded">
+                            <a href="#" class="text-green-cyandark w-full text-lg font-bold h-full flex items-center justify-center hover:bg-green-cyanlight hover:text-green-dark">2</a>
+                        </div>
+                        <div class="w-10 hidden md:block h-10 mx-1 md:mx-2 border-blue-light bg-white border rounded">
+                            <a href="#" class="text-green-cyandark w-full text-lg font-bold h-full flex items-center justify-center hover:bg-green-cyanlight hover:text-green-dark">3</a>
+                        </div>
+                        <div class="w-10 h-10 mx-1 md:mx-2 border-blue-light bg-white border rounded">
+                            <a href="#" class="text-green-cyandark w-full text-lg font-bold h-full flex items-center justify-center hover:bg-green-cyanlight hover:text-green-dark">...</a>
+                        </div>
+                        <div class="w-10 h-10 hidden md:block mx-1 md:mx-2 border-blue-light bg-white border rounded">
+                            <a href="#" class="text-green-cyandark w-full text-lg font-bold h-full flex items-center justify-center hover:bg-green-cyanlight hover:text-green-dark">9</a>
+                        </div>
+                        <div class="w-10 h-10 mx-1 md:mx-2 border-blue-light bg-white border rounded">
+                            <a href="#" class="text-green-cyandark w-full text-lg font-bold h-full flex items-center justify-center hover:bg-green-cyanlight hover:text-green-dark">10</a>
+                        </div>
+                        <div class="w-10 h-10 mx-1 md:mx-2 border-blue-light bg-white border rounded">
+                            <a href="#" class="text-green-cyandark w-full text-lg font-bold h-full flex items-center justify-center hover:bg-green-cyanlight hover:text-green-dark">11</a>
+                        </div>
+                      </div>
+                  </div>
+                 <!-- side bar -->   
+                   <div class="col-span-full lg:col-span-1 block order-1 lg:order-2">
+                            <div class="bg-leaf bg-opacity-10 lg:mb-8 mb-2">
+                                <div class="pt-7">
+                                    <img src="./images/colors-line.png" alt="">
+                                    <div class="p-4">
+                                        <h2 class="border-b border-green-cyan pb-3 mb-4 text-green-dark text-2.5xl mt-3">GESELLSCHAFT</h2>
+                                        <ul class="m-0 p-0 mt-5 grid md:grid-cols-2 lg:grid-cols-1">
+                                            <li class="list-none flex mb-3">
+                                                <a href="#" class="border-none">
+                                                    <span class="font-bold text-leaf">ÜBERSICHT</span>
+                                                </a>
+                                                </li>
+                                            <li class="list-none mb-3">
+                                                <a href="#" class="border-none flex">
+                                                <span class="font-bold text-primary">SCHWEIZ</span>
+                                                <img src="./images/index/icon_arrow.svg" alt="" class="ml-3">
+                                                </a>
+                                            </li>
+                                            <li class="list-none mb-3">
+                                                <a href="#" class="border-none flex">
+                                                    <span class="font-bold text-primary">DEUTSCHLAND</span>
+                                                    <img src="./images/index/icon_arrow.svg" alt="" class="ml-3">
+                                                </a>
+                                            </li>
+                                            <li class="list-none mb-3">
+                                                <a href="#" class="border-none flex">
+                                                <span class="font-bold text-primary">ÖSTERREICH</span>
+                                                <img src="./images/index/icon_arrow.svg" alt="" class="ml-3">
+                                                </a>
+                                            </li>
+                                            <li class="list-none mb-3">
+                                                <a href="#" class="border-none flex">
+                                                <span class="font-bold text-primary">WELTWEIT</span>
+                                                <img src="./images/index/icon_arrow.svg" alt="" class="ml-3">
+                                                </a>
+                                            </li>
+                                            <li class="list-none mb-3">
+                                                <a href="#" class="border-none flex">
+                                                <span class="font-bold text-primary">ZAHLEN UND FAKTEN</span>
+                                                <img src="./images/index/icon_arrow.svg" alt="" class="ml-3">
+                                                </a>
+                                            </li>
+                                            <li class="list-none mb-3">
+                                                <a href="#" class="border-none flex">
+                                                <span class="font-bold text-primary">ORGANISATIONEN</span>
+                                                <img src="./images/index/icon_arrow.svg" alt="" class="ml-3">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="bg-primary-50 pb-2 hidden lg:block">
+                                <div class="pt-7">
+                                    <img src="./images/colors-line.png" alt="">
+                                    <div class="p-4">
+                                        <h2 class="border-b border-blue-light pb-3 mb-4 text-green-dark text-2.5xl mt-3">DEMENZWIKI</h2>
+                                        <p class="text-green-dark mb-0">Eine Checkliste mit den häufigsten Themen zu Alzheimer und Demenz</p>
+                                        <ul class="m-0 p-0 mt-5">
+                                            <li class="list-none mb-3">
+                                                <a href="#" class="flex border-none">
+                                                    <img src="./images/index/medizin-img.svg" alt="" class="w-7">
+                                                    <span class="ml-3 font-bold text-primary">MEDIZIN</span>
+                                                    <img src="./images/index/icon_arrow.svg" alt="" class="ml-3">
+                                                </a>
+                                            </li>
+                                            <li class="list-none flex mb-3">
+                                                <a href="#" class="flex border-none">
+                                                    <img src="./images/index/stethoscope.svg" alt="" class="w-7">
+                                                    <span class="ml-3 font-bold text-primary">DIAGNOSE</span>
+                                                    <img src="./images/index/icon_arrow.svg" alt="" class="ml-3">
+                                                </a>
+                                            </li>
+                                            <li class="list-none flex mb-3">
+                                                <a href="#" class="flex border-none">
+                                                    <img src="./images/index/book.svg" alt="" class="w-7">
+                                                    <span class="ml-3 font-bold text-primary">FORSCHUNG</span>
+                                                    <img src="./images/index/icon_arrow.svg" alt="" class="ml-3">
+                                                </a>
+                                            </li>
+                                            <li class="list-none flex mb-3">
+                                                <a href="#" class="flex border-none">
+                                                    <img src="./images/index/video.svg" alt="" class="w-7">
+                                                    <span class="ml-3 font-bold text-primary">LERNVIDEOS</span>
+                                                    <img src="./images/index/icon_arrow.svg" alt="" class="ml-3">
+                                                </a>
+                                            </li>
+                                            <li class="list-none flex mb-3">
+                                                <a href="#" class="flex border-none">
+                                                    <img src="./images/index/cap.svg" alt="" class="w-7">
+                                                    <span class="ml-3 font-bold text-primary">BILDUNG</span>
+                                                    <img src="./images/index/icon_arrow.svg" alt="" class="ml-3">
+                                                </a>
+                                            </li>
+                                            <li class="list-none flex mb-3">
+                                                <a href="#" class="flex border-none">
+                                                    <img src="./images/index/grid.svg" alt="" class="w-7">
+                                                    <span class="ml-3 font-bold text-primary">ARCHITEKTUR</span>
+                                                    <img src="./images/index/icon_arrow.svg" alt="" class="ml-3">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="hover:bg-opacity-50 bg-green-cyan px-5 py-2 flex justify-center items-center text-sm sm:inline-flex uppercase font-bold text-green-dark border-none hover:border-0 rounded mt-5" >ÜBERSICHT<img src="./images/right-arrow.png" alt="" class="m-2.5"></a>
+                                    </div>
+                                </div>
+                                <div class="pt-7">
+                                    <img src="./images/colors-line.png" alt="">
+                                    <div class="p-4">
+                                        <h2 class="border-b border-blue-light pb-3 mb-4 text-green-dark text-2.5xl mt-3">TERMINE</h2>
+                                        <ul class="m-0 p-0 mt-5">
+                                            <li class="list-none mb-3">
+                                                <a href="#" class="border-none flex items-center font-bold text-green mb-1">17.03.2021 <span class="nav-bullet hidden md:block bg-green m-3"></span> TAGUNG</a>
+                                                <p class="text-primary">Wo der Schuh im Alter drückt</p>
+                                                <p class="text-green-cyandark text-xs border-b border-blue-light pb-3 mt-0">ONLINE, GANZTÄGIG</p>
+                                            </li>
+                                            <li class="list-none mb-3">
+                                                <a href="#" class="border-none flex items-center font-bold text-green mb-1">17.03.2021 <span class="nav-bullet hidden md:block bg-green m-3"></span> TAGUNG</a>
+                                                <p class="text-primary">Nationale Demenzkonferenz 2021</p>
+                                                <p class="text-green-cyandark text-xs border-b border-blue-light pb-3 mt-0">ONLINE, GANZTÄGIG</p>
+                                            </li>
+                                            <li class="list-none mb-3">
+                                                <a href="#" class="border-none flex items-center font-bold text-green mb-1">17.03.2021 <span class="nav-bullet hidden md:block bg-green m-3"></span> TAGUNG</a>
+                                                <p class="text-primary">SBK Kongress 2021 - online</p>
+                                                <p class="text-green-cyandark text-xs border-b border-blue-light pb-3 mt-0">ONLINE, GANZTÄGIG</p>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="hover:bg-opacity-50 bg-green-cyan px-5 py-2 flex justify-center items-center text-sm sm:inline-flex uppercase font-bold text-green-dark border-none hover:border-0 rounded mt-2" >ALLE TERMINE<img src="./images/right-arrow.png" alt="" class="m-2.5"></a>
+                                    </div>
+                                </div>
+                                <div class="pt-7 hidden lg:block">
+                                    <img src="./images/colors-line.png" alt="">
+                                    <div class="p-4">
+                                        <h2 class="border-b border-blue-light pb-3 mb-4 text-green-dark text-2.5xl mt-3">BLOGS</h2>
+                                        <div class="flex">
+                                            <img src="./images/index/megaphone.svg" alt="" class="w-6"> 
+                                            <h4 class="font-bold text-lg ml-4 my-0">QUER GEDACHT</h4>
+                                        </div>
+                                        <p class="text-green-dark my-3">Unsere Blogger schreiben mit spitzer Feder: Lesen Sie erfrischend andere Ansichten.</p>
+                                        <ul class="pl-0 pt-2">
+                                            <li class="list-none flex items-center border-b border-blue-light pb-5 mb-5">
+                                                <img src="./images/index/pegge-img.png" alt="">
+                                                <div class="ml-5 ">
+                                                    <a href="#" class="border-none mt-0 text-base font-normal text-green">Peggy Elfmann</a>
+                                                    <p class="mb-0 mt-1 text-xs">Kontakt halten und helfen in Zeiten von Corona</p>
+                                                </div>
+                                            </li>
+                                            <li class="list-none flex items-center border-b border-blue-light pb-5 mb-5">
+                                                <img src="./images/index/pegge-img1.png" alt="">
+                                                <div class="ml-5 ">
+                                                    <a href="#" class="border-none mt-0 text-base font-normal text-green">Pflegehexe</a>
+                                                    <p class="mb-0 mt-1 text-xs">Fragen, die gestellt werden müssen</p>
+                                                </div>
+                                            </li>
+                                            <li class="list-none flex items-center border-b border-blue-light pb-5 mb-5">
+                                                <img src="./images/index/pegge-img2.png" alt="">
+                                                <div class="ml-5 ">
+                                                    <a href="#" class="border-none mt-0 text-base font-normal text-green">Nina Streeck</a>
+                                                    <p class="mb-0 mt-1 text-xs">Patienten-Verfügungen gegen Bettenknappheit?</p>
+                                                </div>
+                                            </li>
+                                            <li class="list-none flex items-center border-b border-blue-light pb-5 mb-5">
+                                                <img src="./images/index/pegge-img4.png" alt="">
+                                                <div class="ml-5 ">
+                                                    <a href="#" class="border-none mt-0 text-base font-normal text-green">Pflegehexe</a>
+                                                    <p class="mb-0 mt-1 text-xs">Die Konsequenzen ziehen</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="hover:bg-opacity-50 bg-green-cyan px-5 py-2 flex justify-center items-center text-sm sm:inline-flex uppercase font-bold text-green-dark border-none hover:border-0 rounded" >ALLE BLOGBEITRÄGE<img src="./images/right-arrow.png" alt="" class="m-2.5"></a>
+                                    </div>
+                                    </div>
+                                <div class="pt-7 hidden lg:block">
+                                    <img src="./images/colors-line.png" alt="">
+                                    <div class="p-4">
+                                        <h2 class="border-b border-blue-light pb-3 mb-4 text-green-dark text-2.5xl mt-3">UNGEKÜNSTELT</h2>
+                                        <img src="./images/ungekunstelt-img.png" alt="">
+                                        <p class="text-green-dark pt-3">Das schöpferische Potenzial von<br/> Menschen mit Demenz</p>
+                                        <a href="#" class="hover:bg-opacity-50 bg-green-cyan px-5 py-2 flex justify-center items-center text-sm sm:inline-flex uppercase font-bold text-green-dark border-none hover:border-0 rounded" >ZUR WEBSEITE<img src="./images/right-arrow.png" alt="" class="m-2.5"></a>
+                                    </div>
+                                </div>
+                            </div>
+                   </div>
+                <!-- side end -->
+                </div>
+            </div>
+     </main>
+    <!-- Start footer -->
+    <footer class="relative">
+        <div class="bg-primary mt-auto py-8">
+          <div class="container">
+              <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 items-end">
+                  <div class="col-span-2 md:col-span-1 lg:col-span-2">
+                        <div class="grid gap-4 grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+                            <div class="flex align-items-center mb-6 md:mb-6 lg:mb-0">
+                                <img class="md:w-full lg:w-8/12" src="./images/logo-alzheimer-white.svg">
+                            </div>
+                            <div class="text-center">
+                                <div class="px-0 lg:px-5">
+                                    <div class="relative">
+                                        <label for="search" class="sr-only">Suche</label>
+                                        <input type="text" name="s" id="search" class="shadow-sm bg-transparent border border-primary-800 placeholder-blue-gray w-full block px-4 py-2 rounded-sm text-white focus:ring-white focus:border-white" placeholder="Suche">
+                                        <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                            <svg class="h-4 w-4 text-blue-gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                            <path fill="currentColor" fill-rule="nonzero" d="M8.191 16.395a8.156 8.156 0 0 0 4.545-1.382l4.706 4.71c.37.37.98.37 1.365 0l.916-.916a.98.98 0 0 0 0-1.367L15 12.747a8.173 8.173 0 0 0 1.381-4.55C16.382 3.682 12.704 0 8.192 0 3.677 0 0 3.68 0 8.198c0 4.516 3.662 8.197 8.191 8.197Zm0-13.18a4.985 4.985 0 0 1 4.979 4.983 4.985 4.985 0 0 1-4.979 4.983 4.985 4.985 0 0 1-4.979-4.983 4.985 4.985 0 0 1 4.98-4.983Z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="col-span-2 md:col-span-1 lg:w-auto w-full">                        
+                    <div class="grid gap-4 grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
+                    <nav class="social-menu block lg:hidden mt-8 md:mt-0">
+                        <ul class="space-x-4 p-0 flex list-none xl:space-x-5 justify-center md:justify-end">
+                          <li>
+                            <a href="https://de-de.facebook.com/alzheimerpunktch" target="_blank" class="text-blue-gray hover:text-white">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-5 w-auto">
+                                <path fill="currentColor" fill-rule="nonzero" d="M18.558 0H1.442C.646 0 0 .646 0 1.442v17.116C0 19.354.646 20 1.442 20h9.242v-7.734H8.086V9.238h2.598V7.01c0-2.583 1.577-3.99 3.882-3.99 1.103 0 2.052.083 2.329.12v2.7h-1.59c-1.254 0-1.496.596-1.496 1.47v1.928h2.998l-.391 3.028h-2.607V20h4.749c.796 0 1.442-.646 1.442-1.442V1.442C20 .646 19.354 0 18.558 0Z"></path>
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://twitter.com/alzheimer_ch" target="_blank" class="text-blue-gray hover:text-white">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-5 w-auto">
+                                <path fill="currentColor" fill-rule="nonzero" d="M18.558 0H1.442C.646 0 0 .646 0 1.442v17.116C0 19.354.646 20 1.442 20h17.116c.796 0 1.442-.646 1.442-1.442V1.442C20 .646 19.354 0 18.558 0Zm-3.992 7.797c.004.098.006.197.006.297 0 3.033-2.308 6.53-6.53 6.53a6.497 6.497 0 0 1-3.518-1.03c.18.02.362.03.547.03a4.606 4.606 0 0 0 2.85-.982 2.298 2.298 0 0 1-2.143-1.594 2.284 2.284 0 0 0 1.036-.04 2.296 2.296 0 0 1-1.841-2.25V8.73c.31.172.663.275 1.04.287a2.293 2.293 0 0 1-.71-3.065 6.517 6.517 0 0 0 4.73 2.399 2.296 2.296 0 0 1 3.911-2.093 4.604 4.604 0 0 0 1.458-.558 2.304 2.304 0 0 1-1.01 1.27 4.578 4.578 0 0 0 1.319-.362c-.307.46-.697.865-1.145 1.189Z"></path>
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.youtube.com/channel/UCwCxIF1R6JuWqw-vzcdHWog" target="_blank" class="text-blue-gray hover:text-white">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-5 w-auto">
+                                <g fill="currentColor" fill-rule="nonzero">
+                                  <path d="m9 12 3-2-3-2z"></path>
+                                  <path d="M18.558 0H1.442C.646 0 0 .646 0 1.442v17.116C0 19.354.646 20 1.442 20h17.116c.796 0 1.442-.646 1.442-1.442V1.442C20 .646 19.354 0 18.558 0Zm-2.31 10.01s0 2.028-.257 3.006a1.566 1.566 0 0 1-1.101 1.102c-.978.257-4.89.257-4.89.257s-3.902 0-4.89-.268a1.566 1.566 0 0 1-1.101-1.101C3.75 12.038 3.75 10 3.75 10s0-2.028.258-3.006A1.598 1.598 0 0 1 5.11 5.882c.978-.257 4.89-.257 4.89-.257s3.912 0 4.89.268c.535.144.957.566 1.101 1.101.268.978.258 3.016.258 3.016Z"></path>
+                                </g>
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.instagram.com/alzheimer.ch/?hl=de" target="_blank" class="text-blue-gray hover:text-white">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-5 w-auto">
+                                <g fill="currentColor" fill-rule="nonzero">
+                                  <path d="M14.465 6.622a1.775 1.775 0 0 0-.428-.659 1.773 1.773 0 0 0-.659-.428c-.202-.078-.505-.172-1.063-.197-.604-.028-.786-.034-2.315-.034-1.53 0-1.71.006-2.314.034-.559.025-.862.119-1.064.197a1.772 1.772 0 0 0-.658.428c-.19.185-.337.41-.43.659-.077.202-.17.505-.196 1.064-.028.603-.034.785-.034 2.314 0 1.53.006 1.71.034 2.315.025.558.119.861.197 1.063.092.249.238.474.428.659.185.19.41.336.659.428.202.079.505.172 1.064.197.603.028.784.034 2.314.034s1.71-.006 2.314-.034c.559-.025.862-.118 1.064-.197.5-.193.894-.587 1.087-1.087.078-.202.172-.505.197-1.063.028-.604.034-.786.034-2.315 0-1.53-.006-1.71-.034-2.314-.025-.559-.118-.862-.197-1.064ZM10 12.957a2.956 2.956 0 1 1 0-5.913 2.956 2.956 0 0 1 0 5.913Zm3.043-5.305a.696.696 0 1 1 0-1.391.696.696 0 0 1 0 1.391Z"></path>
+                                  <path d="M11.913 10a1.913 1.913 0 1 1-3.826 0 1.913 1.913 0 0 1 3.826 0Z"></path>
+                                  <path d="M18.558 0H1.442C.646 0 0 .646 0 1.442v17.116C0 19.354.646 20 1.442 20h17.116c.796 0 1.442-.646 1.442-1.442V1.442C20 .646 19.354 0 18.558 0Zm-2.853 12.366c-.028.611-.125 1.028-.267 1.393a2.935 2.935 0 0 1-1.679 1.679c-.365.142-.782.239-1.393.267-.612.027-.807.034-2.366.034-1.559 0-1.754-.007-2.366-.034-.61-.028-1.028-.125-1.393-.267a2.812 2.812 0 0 1-1.017-.662 2.813 2.813 0 0 1-.662-1.017c-.141-.365-.239-.782-.266-1.393-.029-.612-.035-.807-.035-2.366 0-1.559.006-1.754.034-2.366.028-.611.125-1.028.267-1.393.144-.383.37-.73.662-1.017a2.811 2.811 0 0 1 1.017-.662c.365-.142.782-.239 1.393-.267.612-.027.807-.034 2.366-.034 1.559 0 1.754.007 2.366.035.611.027 1.028.124 1.393.266.383.144.73.37 1.017.662.292.287.518.634.662 1.017.142.365.239.782.267 1.393.028.612.034.807.034 2.366 0 1.559-.006 1.754-.034 2.366Z"></path>
+                                </g>
+                              </svg>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                </div>
+             </div>
+          </div>
+        </div>
+        <div class="bg-primary-dark border-t border-primary-800 pt-8 md:pb-8">
+          <div class="container">
+            <div class="grid gap-4 grid-cols-1 md:grid-cols-1 lg:grid-cols-12">
+              <div class="hidden md:block copy-right col-span-2 text-blue-light order-2 md:order-2 lg:order-1 text-center md:text-center lg:text-left">
+                © 2021 alzheimer.ch
+              </div>
+              <div class="md:space-x-6 p-0 flex items-center text-blue-light col-span-1 md:col-span-1 lg:col-span-8 text-center md:justify-center order-1 md:order-1 lg:order-2 flex-wrap">
+                <div class="py-2 lg:py-0 w-6/12 md:w-auto ml-0 text-left md:text-center">
+                    <a class="capitalize hover:text-white" href="#">Startseite</a>
+                </div>
+                <div class="nav-bullet hidden md:block bg-green"></div>
+                <div class="py-2 lg:py-0 w-6/12 md:w-auto ml-0 lg:mb-0 text-left md:text-center">
+                    <a href="#" class="capitalize hover:text-white">Mediathek</a>
+                </div>
+                <div class="nav-bullet hidden md:block bg-green"></div>
+                <div class="py-2 lg:py-0 lg:mb-0 w-6/12 md:w-auto ml-0 text-left md:text-center">
+                    <a href="agenda-v2.html" class="capitalize hover:text-white">Agenda</a>
+                </div>
+                <div class="nav-bullet hidden md:block bg-green"></div>
+                <div class="py-2 lg:py-0 lg:mb-0 w-6/12 md:w-auto ml-0 text-left md:text-center">
+                    <a href="#" class="capitalize hover:text-white">Gönner</a>
+                </div>
+                <div class="nav-bullet hidden md:block bg-green"></div>
+                <div class="py-2 lg:py-0 lg:mb-0 w-6/12 md:w-auto ml-0 text-left md:text-center">
+                    <a href="#" class="capitalize hover:text-white" >Autoren</a>
+                </div>
+                <div class="nav-bullet hidden md:block bg-green"></div>
+                <div class="py-2 lg:py-0 lg:mb-0 w-6/12 md:w-auto ml-0 text-left md:text-center">
+                    <a href="#" class="capitalize hover:text-white">Impressum</a>
+                </div>
+                <div class="nav-bullet hidden md:block bg-green"></div>
+                <div class="py-2 lg:py-0 lg:mb-0 w-6/12 md:w-auto ml-0 text-left md:text-center">
+                    <a href="#" class="capitalize hover:text-white">Disclaimer</a>
+                </div>
+                <div class="nav-bullet hidden md:block bg-green"></div>
+                <div class="py-2 lg:py-0 lg:mb-0 w-6/12 md:w-auto ml-0 text-left md:text-center">
+                    <a href="#" class="capitalize hover:text-white">Kontakt</a>
+                </div>
+              </div>
+              <div class="col-span-1 md:col-span-1 lg:col-span-2 text-blue-light text-right order-3">
+                <nav class="social-menu hidden lg:block">
+                    <ul class="space-x-4 p-0 flex list-none xl:space-x-5 justify-end">
+                      <li>
+                        <a href="https://de-de.facebook.com/alzheimerpunktch" target="_blank" class="text-blue-gray hover:text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-5 w-auto">
+                            <path fill="currentColor" fill-rule="nonzero" d="M18.558 0H1.442C.646 0 0 .646 0 1.442v17.116C0 19.354.646 20 1.442 20h9.242v-7.734H8.086V9.238h2.598V7.01c0-2.583 1.577-3.99 3.882-3.99 1.103 0 2.052.083 2.329.12v2.7h-1.59c-1.254 0-1.496.596-1.496 1.47v1.928h2.998l-.391 3.028h-2.607V20h4.749c.796 0 1.442-.646 1.442-1.442V1.442C20 .646 19.354 0 18.558 0Z"></path>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/alzheimer_ch" target="_blank" class="text-blue-gray hover:text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-5 w-auto">
+                            <path fill="currentColor" fill-rule="nonzero" d="M18.558 0H1.442C.646 0 0 .646 0 1.442v17.116C0 19.354.646 20 1.442 20h17.116c.796 0 1.442-.646 1.442-1.442V1.442C20 .646 19.354 0 18.558 0Zm-3.992 7.797c.004.098.006.197.006.297 0 3.033-2.308 6.53-6.53 6.53a6.497 6.497 0 0 1-3.518-1.03c.18.02.362.03.547.03a4.606 4.606 0 0 0 2.85-.982 2.298 2.298 0 0 1-2.143-1.594 2.284 2.284 0 0 0 1.036-.04 2.296 2.296 0 0 1-1.841-2.25V8.73c.31.172.663.275 1.04.287a2.293 2.293 0 0 1-.71-3.065 6.517 6.517 0 0 0 4.73 2.399 2.296 2.296 0 0 1 3.911-2.093 4.604 4.604 0 0 0 1.458-.558 2.304 2.304 0 0 1-1.01 1.27 4.578 4.578 0 0 0 1.319-.362c-.307.46-.697.865-1.145 1.189Z"></path>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.youtube.com/channel/UCwCxIF1R6JuWqw-vzcdHWog" target="_blank" class="text-blue-gray hover:text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-5 w-auto">
+                            <g fill="currentColor" fill-rule="nonzero">
+                              <path d="m9 12 3-2-3-2z"></path>
+                              <path d="M18.558 0H1.442C.646 0 0 .646 0 1.442v17.116C0 19.354.646 20 1.442 20h17.116c.796 0 1.442-.646 1.442-1.442V1.442C20 .646 19.354 0 18.558 0Zm-2.31 10.01s0 2.028-.257 3.006a1.566 1.566 0 0 1-1.101 1.102c-.978.257-4.89.257-4.89.257s-3.902 0-4.89-.268a1.566 1.566 0 0 1-1.101-1.101C3.75 12.038 3.75 10 3.75 10s0-2.028.258-3.006A1.598 1.598 0 0 1 5.11 5.882c.978-.257 4.89-.257 4.89-.257s3.912 0 4.89.268c.535.144.957.566 1.101 1.101.268.978.258 3.016.258 3.016Z"></path>
+                            </g>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/alzheimer.ch/?hl=de" target="_blank" class="text-blue-gray hover:text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-5 w-auto">
+                            <g fill="currentColor" fill-rule="nonzero">
+                              <path d="M14.465 6.622a1.775 1.775 0 0 0-.428-.659 1.773 1.773 0 0 0-.659-.428c-.202-.078-.505-.172-1.063-.197-.604-.028-.786-.034-2.315-.034-1.53 0-1.71.006-2.314.034-.559.025-.862.119-1.064.197a1.772 1.772 0 0 0-.658.428c-.19.185-.337.41-.43.659-.077.202-.17.505-.196 1.064-.028.603-.034.785-.034 2.314 0 1.53.006 1.71.034 2.315.025.558.119.861.197 1.063.092.249.238.474.428.659.185.19.41.336.659.428.202.079.505.172 1.064.197.603.028.784.034 2.314.034s1.71-.006 2.314-.034c.559-.025.862-.118 1.064-.197.5-.193.894-.587 1.087-1.087.078-.202.172-.505.197-1.063.028-.604.034-.786.034-2.315 0-1.53-.006-1.71-.034-2.314-.025-.559-.118-.862-.197-1.064ZM10 12.957a2.956 2.956 0 1 1 0-5.913 2.956 2.956 0 0 1 0 5.913Zm3.043-5.305a.696.696 0 1 1 0-1.391.696.696 0 0 1 0 1.391Z"></path>
+                              <path d="M11.913 10a1.913 1.913 0 1 1-3.826 0 1.913 1.913 0 0 1 3.826 0Z"></path>
+                              <path d="M18.558 0H1.442C.646 0 0 .646 0 1.442v17.116C0 19.354.646 20 1.442 20h17.116c.796 0 1.442-.646 1.442-1.442V1.442C20 .646 19.354 0 18.558 0Zm-2.853 12.366c-.028.611-.125 1.028-.267 1.393a2.935 2.935 0 0 1-1.679 1.679c-.365.142-.782.239-1.393.267-.612.027-.807.034-2.366.034-1.559 0-1.754-.007-2.366-.034-.61-.028-1.028-.125-1.393-.267a2.812 2.812 0 0 1-1.017-.662 2.813 2.813 0 0 1-.662-1.017c-.141-.365-.239-.782-.266-1.393-.029-.612-.035-.807-.035-2.366 0-1.559.006-1.754.034-2.366.028-.611.125-1.028.267-1.393.144-.383.37-.73.662-1.017a2.811 2.811 0 0 1 1.017-.662c.365-.142.782-.239 1.393-.267.612-.027.807-.034 2.366-.034 1.559 0 1.754.007 2.366.035.611.027 1.028.124 1.393.266.383.144.73.37 1.017.662.292.287.518.634.662 1.017.142.365.239.782.267 1.393.028.612.034.807.034 2.366 0 1.559-.006 1.754-.034 2.366Z"></path>
+                            </g>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
+            </div>
+          </div>
+          <div class="block md:hidden border-t py-3 border-primary-800 copy-right col-span-2 text-blue-light order-2 md:order-2 lg:order-1 text-center md:text-center lg:text-left">
+            © 2021 alzheimer.ch
+          </div>
+        </div>            
+    </footer>
+      <!-- End footer -->
+      <!-- jqurey -->
+      <script src="./js/jquery.min.js"></script>
+      <!-- owl carosel -->
+      <script src="./js/owl.carousel.min.js"></script>
+      <!-- alpinejs js -->
+      <script src="https://unpkg.com/alpinejs" defer></script>
+      <!-- custom js -->
+      <script src="./js/custom.js"></script>
+</body>
+</html>

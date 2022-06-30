@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.192" height="19.967" viewBox="0 0 30.192 19.967">
+  <g id="icon_austria" transform="translate(0 -0.016)">
+    <g id="Group">
+      <path id="Path" d="M27.931,0H2.261A2.272,2.272,0,0,0,0,2.282V6.656H30.192V2.282A2.272,2.272,0,0,0,27.931,0Z" transform="translate(0 0.016)" fill="#ff4b55"/>
+      <path id="Path-2" data-name="Path" d="M0,4.373A2.272,2.272,0,0,0,2.261,6.656h25.67a2.272,2.272,0,0,0,2.261-2.282V0H0Z" transform="translate(0 13.328)" fill="#ff4b55"/>
+    </g>
+    <rect id="Rectangle" width="30.192" height="7" transform="translate(0 6)" fill="#f5f5f5"/>
+  </g>
+</svg>

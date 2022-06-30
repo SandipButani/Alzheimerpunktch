@@ -1,0 +1,19 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" width="13" height="13">
+	<title>Post</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #00376d } 
+		.shp1 { fill: #ffffff } 
+	</style>
+	<g id="Post">
+		<g id="social">
+			<g id="email">
+				<path id="Rectangle" class="shp0" d="M0 2.5C0 1.39 0.9 0.5 2 0.5L10.5 0.5C11.6 0.5 12.5 1.39 12.5 2.5L12.5 11C12.5 12.1 11.6 13 10.5 13L2 13C0.9 13 0 12.1 0 11L0 2.5Z" />
+				<g id="icon_email">
+					<path id="Path" class="shp1" d="M9.47 4.5L3.5 4.5L6.48 7L9.5 4.51C9.49 4.5 9.48 4.5 9.47 4.5Z" />
+					<path id="Path" class="shp1" d="M6.66 7.72C6.57 7.79 6.43 7.79 6.34 7.72L3 5L3 9.25C3 9.39 3.11 9.5 3.25 9.5L9.75 9.5C9.89 9.5 10 9.39 10 9.25L10 5.04L6.66 7.72Z" />
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
